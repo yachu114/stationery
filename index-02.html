@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+    .d-none{
+        display: none;
+    }
+    .d-flex{
+        display: flex;
+    }
+    .item_center{
+        align-items: center;
+    }
+    .align_center{
+        text-align: center;
+    }
+    .align_left{
+        text-align: left;
+    }
+    .space_between{
+        justify-content: space-between;
+    }
+    .content_center{
+        justify-content: center;
+    }
+    .relative{
+        position: relative;
+    }
+    .absolute{
+        position: absolute;
+    }
+    .fixed{
+        position: fixed;
+    }
+    .sticky{
+        position:sticky;
+    }
+    .wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .area{
+        width:100vw;
+        height:100vh;
+    }
+    .zh{
+        /* transition: .2s; */
+        /* opacity: 0; */
+        display: none;
+    }
+    .fit_cover{
+        object-fit: cover;
+    }
+    .btn{
+        background: #f78e33;
+        color:#51443c;
+        border-radius: 50%;
+        border: 0px;
+        padding: 10px;
+        line-height: 1;
+    }
+    .left_p{
+        left: 200px;
+        top: 60px;
+    }
+    .left_i{
+        left: 150px;
+        top: 80px
+    }
+    .left_d{
+        left: 150px;
+        top: 0px;
+    }
+    .right{
+        left: 700px;
+        top: 120px;
+    }
+    /* ----------------------------------------------header------------------------- */
+    header{
+        width: 100%;
+        /* border: 1px solid #333; */
+        top: 0;
+    }
+    .menu{
+        height: 90px;
+    }
+    .logo{
+        height: 8vh;
+    }
+    .logo img{
+        height: 100%;
+        object-fit: cover;  
+    }
+    nav ul li{
+        list-style-type: none;
+        text-align: center;
+        padding: 0 30px;
+        transition: .5s;
+    }
+    .en-menu{
+        /* transition: .2s; */
+        /* opacity: 1; */
+        display: block;
+    }
+    nav ul li:hover .zh{
+        /* opacity: 1; */
+        display: block;
+    }
+    nav ul li:hover .en-menu{
+        /* opacity: 0; */
+        display: none;
+    }
+    nav ul li:hover a{
+        background: #f78e33;
+    }
+    nav ul li:active a{
+        background: #f78e33;
+    }
+    nav ul li a{
+        text-decoration: none;
+        display: block;
+        padding: 0 6px;
+    }
+    /* ----------------------------------------------main------------------------ */
+    main{
+        width: 100%;
+        /* border: 1px solid #333; */
+        /* vertical-align: middle; */
+    }
+    /* .bg{
+        background: url(images/bg.png) center center no-repeat;
+        position: fixed;
+        width: 100%;
+        height: calc( 100vh - 200px);
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    } */
+    .area{
+        /* background: url(images/bg.png) center center no-repeat; */
+        height: calc( 100vh - 200px);
+        margin-top: calc( 50vh - 350px);
+    }
+    .slogan h2{
+        /* margin: 40px auto; */
+        padding: 40px;
+        padding-top: 160px;
+        line-height: 1.7;
+    }
+    .spot{
+        right: 20px;
+        top: -300px;
+    }
+    .ink{
+        left: -70px;
+        bottom: -450px;
+    }
+    .pen{
+        right: -100px;
+        top: -120px;
+        height: 500px;
+    }
+    .pen img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .cap{
+        top: -350px;
+    }
+    .bluepen{
+        right: 200px;
+        top: 100px;
+    }
+    .newin .fountain_pen{
+        height: 500px;
+    }
+    .newin .fountain_pen img{
+        height: 100%
+    }
+    .newin .bottledink, .diary{
+        width: 400px;
+    }
+    .newin .bottledink img, .diary img{
+        width: 100%
+    }
+    
+    .newin button:hover{
+        border-radius: 25px;
+    }
+    .newin button:hover .zh{
+        display: flex;
+    }
+    /* ---------------------------------------------footer----- */
+    footer{
+        width: 100%;
+        height: 90px;
+        /* border: 1px solid #333; */
+        bottom: 0;
+        /* justify-content: center; */
+    }
+    .social ul li{
+        list-style-type: none;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .social ul li a{
+        text-decoration: none;
+        display: block;
+    }
+    /* ---------------------------------------------aside btn----------- */
+    aside .btn{
+        background: #51443c;
+        border-radius: 50px;
+        bottom: 250px;
+        right: 25px;
+    }
+    aside .btn a{
+        display: block;
+        padding: 6px;
+        color: #fff;
+        text-decoration: none;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        text-align: right;
+    }
+    </style>
+</head>
+<body>
+    <header class="fixed">
+        <div class="menu wrapper d-flex item_center space_between">
+            <div class="logo">
+                <img src="images/vision-logo.svg" alt="">
+            </div>
+            <nav class="item_center space_between">
+                <ul class="d-flex">
+                    <li><a href=""><span class="en-menu">Home</span><span class="zh">店舖</span></a></li>
+                    <li><a href=""><span class="en-menu">Product</span><span class="zh">文房具</span></a></li>
+                    <li><a href=""><span class="en-menu">About</span><span class="zh">關於</span></a></li>
+                    <li><a href=""><span class="en-menu">Blog</span><span class="zh">隨手</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="bg wrapper"></div>
+    <main class="align_center">
+        <section class="area wrapper area1">
+            <div class="slogan relative">
+                <h1 class="d-none">明進文房具</h1>
+                <div class="wrapper relative layer1">
+                    <h2>跟著好文具一同實現<br>明天更進步的人生</h2>
+                    <!-- <figure class="absolute spot"><img src="images/spot.png" alt=""></figure> -->
+                    <figure class="absolute ink"><img class="fit_cover" src="images/spread_botted_ink.png" alt=""></figure>
+                </div>
+                <div class=" wrapper relative layer2">
+                    <figure class="absolute cap"><img class="fit_cover" src="images/olivecap.png" alt=""></figure>
+                    <figure class="absolute pen"><img class="fit_cover" src="images/olivepen.png" alt=""></figure>
+                    <figure class="absolute bluepen"><img class="fit_cover" src="images/bluepen.png" alt=""></figure>
+                </div>
+            </div>
+        </section>
+        <section class="area wrapper area2">
+            <div class="newin d-flex relative">
+                <div class="layer1 left_p absolute">
+                    <figure class="fountain_pen"><img class="fit_cover" src="images/newin1.png" alt=""></figure>
+                </div>
+                <div class="layer2 right absolute align_left">
+                    <h3>新進商品</h3>
+                    <h5> 01 / 06</h5>
+                    <h2>Pelikan M600<a> 鋼筆</a></h2>
+                    <button class="btn read_more"><i class="fas fa-plus"><span class="zh">詳細資訊</span></i></button>
+                    <!-- <input type="button" value="" class="btn read_more fas fa-plus" ><span class="zh">詳細資訊</span> -->
+                </div>
+            </div>
+        </section>
+        <section class="area wrapper area3">
+            <div class="newin d-flex relative">
+                <div class="layer1 left_p absolute">
+                    <figure class="fountain_pen"><img class="fit_cover" src="images/newin2.png" alt=""></figure>
+                </div>
+                <div class="layer2 right absolute align_left">
+                    <h3>新進商品</h3>
+                    <h5> 02 / 06</h5>
+                    <h2>Platinum 3776<a> 鋼筆</a></h2>
+                    <button class="btn read_more"><i class="fas fa-plus"><span class="zh">詳細資訊</span></i></button>
+                    <!-- <input type="button" value="" class="btn read_more fas fa-plus" ><span class="zh">詳細資訊</span> -->
+                </div>
+            </div>
+        </section>
+        <section class="area wrapper area4">
+            <div class="newin d-flex relative">
+                <div class="layer1 left_p absolute">
+                    <figure class="fountain_pen"><img class="fit_cover" src="images/newin3.png" alt=""></figure>
+                </div>
+                <div class="layer2 right absolute align_left">
+                    <h3>新進商品</h3>
+                    <h5> 03 / 06</h5>
+                    <h2>Pelikan M205<a> 鋼筆</a></h2>
+                    <button class="btn read_more"><i class="fas fa-plus"><span class="zh">詳細資訊</span></i></button>
+                    <!-- <input type="button" value="" class="btn read_more fas fa-plus" ><span class="zh">詳細資訊</span> -->
+                </div>
+            </div>
+        </section>
+        <section class="area wrapper area5">
+            <div class="newin d-flex relative">
+                <div class="layer1 left_i absolute">
+                    <figure class="bottledink"><img class="fit_cover" src="images/newin4.png" alt=""></figure>
+                </div>
+                <div class="layer2 right absolute align_left">
+                    <h3>新進商品</h3>
+                    <h5> 04 / 06</h5>
+                    <h2>GRAF VON FABER-CASTELL<br>TURQUOISE <a> 墨水</a></h2>
+                    <button class="btn read_more"><i class="fas fa-plus"><span class="zh">詳細資訊</span></i></button>
+                    <!-- <input type="button" value="" class="btn read_more fas fa-plus" ><span class="zh">詳細資訊</span> -->
+                </div>
+            </div>
+        </section>
+        <section class="area wrapper area6">
+            <div class="newin d-flex relative">
+                <div class="layer1 left_i absolute">
+                    <figure class="bottledink"><img class="fit_cover" src="images/newin7.png" alt=""></figure>
+                </div>
+                <div class="layer2 right absolute align_left">
+                    <h3>新進商品</h3>
+                    <h5> 05 / 06</h5>
+                    <h2>Herbin 1798<a> 墨水</a></h2>
+                    <button class="btn read_more"><i class="fas fa-plus"><span class="zh">詳細資訊</span></i></button>
+                    <!-- <input type="button" value="" class="btn read_more fas fa-plus" ><span class="zh">詳細資訊</span> -->
+                </div>
+            </div>
+        </section>
+        <section class="area wrapper area7">
+            <div class="newin d-flex relative">
+                <div class="layer1 left_d absolute">
+                    <figure class="diary"><img class="fit_cover" src="images/newin9.png" alt=""></figure>
+                </div>
+                <div class="layer2 right absolute align_left">
+                    <h3>新進商品</h3>
+                    <h5> 06 / 06</h5>
+                    <h2>KOKUYO 2019<a> 手扎</a></h2>
+                    <button class="btn read_more"><i class="fas fa-plus"><span class="zh">詳細資訊</span></i></button>
+                    <!-- <input type="button" value="" class="btn read_more fas fa-plus" ><span class="zh">詳細資訊</span> -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="fixed align_center content_center">
+        <div class="container wrapper d-flex item_center space_between ">
+            <div class="coyperight"><p>Copyright © 2018 by Yachu Chang. All rights reserved</p></div>
+            <div class="social item_center">
+                <ul class="d-flex">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube-square"></i></a></li>
+                    <li><a href=""><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <aside class="">
+        <button class="btn shop_now fixed"><a href="">shop now</a></button>
+    </aside>
+</body>
+</html>
