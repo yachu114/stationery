@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <style>
+    .d-none{
+        display: none;
+    }
+    .d-flex{
+        display: flex;
+    }
+    .item_center{
+        align-items: center;
+    }
+    .align_center{
+        text-align: center;
+    }
+    .space-between{
+        justify-content: space-between;
+    }
+    .relative{
+        position: relative;
+    }
+    .absolute{
+        position: absolute;
+    }
+    .fixed{
+        position: fixed;
+    }
+    .sticky{
+        position:sticky;
+    }
+    .wrapper{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    /* ----------------------------------------------header------------------------- */
+    header{
+        max-width: 1920px;
+        border: 1px solid #333;
+        top: 0;
+    }
+    .menu{
+        height: 10vh;
+    }
+    .logo{
+        height: 8vh;
+    }
+    .logo img{
+        height: 100%;
+        object-fit: cover;  
+    }
+    nav ul li{
+        list-style-type: none;
+        text-align: center;
+        padding: 0 30px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        display: block;
+    }
+    /* ----------------------------------------------main------------------------ */
+    main{
+        width: 100%;
+        /* padding: 0 100px; */
+        border: 1px solid #333;
+    }
+    .slogan{
+        background: url(images/bg.png) center center no-repeat;
+        height: calc( 80vh - 20px);
+    }
+    .slogan h2{
+        padding: 40px;
+        line-height: 1.7;
+    }
+    .spot{
+        right: 20px;
+        top: -300px;
+    }
+    .ink{
+        left: -100px;
+    }
+    .pen{
+        right: -100px;
+        top: 20px;
+        height: 500px;
+    }
+    .pen img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .cap{
+        top: -250px;
+    }
+    .bluepen{
+        right: 200px;
+        top: 300px;
+    }
+    </style>
+</head>
+<body>
+    <header class="sticky">
+        <div class="menu wrapper d-flex item_center space-between">
+            <div class="logo">
+                <img src="images/vision-logo.svg" alt="">
+            </div>
+            <nav class="item_center space-between">
+                <ul class="d-flex">
+                    <li><a href="">文房具</a></li>
+                    <li><a href="">關於</a></li>
+                    <li><a href="">商品</a></li>
+                    <li><a href="">隨手</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="align_center">
+        <div class="slogan wrapper relative">
+            <h1 class="d-none">明進文房具</h1>
+            <h2>跟著好文具一同實現<br>明天更進步的人生</h2>
+            <div class="wrapper relative layer1">
+                <!-- <figure class="absolute spot"><img src="images/spot.png" alt=""></figure> -->
+                <figure class="absolute ink"><img src="images/spread_botted_ink.png" alt=""></figure>
+            </div>
+            <div class=" wrapper relative layer2">
+                <figure class="absolute cap"><img src="images/olivecap.png" alt=""></figure>
+                <figure class="absolute pen"><img src="images/olivepen.png" alt=""></figure>
+                <figure class="absolute bluepen"><img src="images/bluepen.png" alt=""></figure>
+            </div>
+        </div>
+    </main>
+    <footer class="sticky">
+        <div class="coyperight"></div>
+        <div class="social">
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
