@@ -45,10 +45,6 @@
         max-width: 1200px;
         margin: 0 auto;
     }
-    /* .area{
-        width:100vw;
-        height:100vh;
-    } */
     .zh{
         /* transition: .2s; */
         /* opacity: 0; */
@@ -131,71 +127,28 @@
         padding: 0 6px;
     }
     /* ----------------------------------------------main------------------------ */
-    .bg{
-        background: url(images/bg.png) center center no-repeat;
-    }
     main{
-        width: 100%;
-        /* margin-top: calc( 90px + 15vh); */
-        margin-top: calc( 90px + 5vh);
-        /* border: 1px solid #333; */
-        /* vertical-align: middle; */
-    }
+        text-align: center;
+    } 
     .area{
-        background: url(images/bg.png) center center no-repeat;
-        height: calc( 70vh - 180px);
-        margin-top: calc( 90px + 5vh);
+        width: 100%;
+        max-width: 1200px;
+        height: 100vh;
+        margin:0 auto ;
+        padding:0;
+        /* position:relative ; */
+        /* background: #51443c; */
+        /* box-shadow:0 0 30px rgba(0,0,0,0.6);
+        border:1px solid #ccc ; */
     }
-    .slider{
-        overflow: hidden;
+    .bg{
+        width: 100%;
         max-width: 1200px;
         height: calc( 90vh - 180px);
-        margin: auto auto;
-    }
-    .slider ul{
-        list-style-type: none;
-        text-align: left;
-        position:relative;
-        padding: 0;
-        width: 500%;
-        margin: 0;
-        left: 0;
-        animation: 20s slidy infinite;
-    }
-    .slider img{
-        width: 20%;
-        float:left;
-        object-fit: cover;
-    }
-    @keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-    }
-
-    
-    .map{
-        height: calc( 90vh - 180px);
+        background: url(images/slide0.jpg) no-repeat fixed center;
+        /* background-attachment: fixed; */
+        right: calc(50% - 600px);
         margin-top: calc( 90px + 5vh);
-    }
-    .map iframe{
-        width: 100%;
-        height: 100%;
-    }
-    .location{
-        background: #ece4d9;
-        color:#51443c;
-        top: 80px;
-        left: calc( 50% - 200px);
-        width: 400px;
-        height: 400px;
-        padding: 40px;
     }
     /* ---------------------------------------------footer----- */
     footer{
@@ -248,34 +201,58 @@
             </nav>
         </div>
     </header>
-    <div class="bg"></div>
     <main>
-        <section class="wrapper areaß">
-            <div class="slider">
-                <ul class="list-unstyled slider_wrap relative">
-                    <li class="fit_cover"><img class="" src="images/slide0.jpg" alt=""></li>
-                    <li class="fit_cover"><img class="" src="images/slide1.JPG" alt=""></li>
-                    <li class="fit_cover"><img class="" src="images/slide2.jpg" alt=""></li>
-                    <li class="fit_cover"><img class="" src="images/slide3.jpg" alt=""></li>
-                    <li class="fit_cover"><img class="" src="images/slide0.jpg" alt=""></li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <div class="map wrapper relative">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.3306089432776!2d121.54962135081865!3d25.022851983898963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa31731b9a03%3A0x58b637c996871e26!2sVision+Stationery!5e0!3m2!1sen!2stw!4v1543393295868" frameborder="0" style="border:0" allowfullscreen></iframe>  
-                <div class="location absolute align_left">
-                    <h2>明進文房具</h2>
-                    <h5>地址：台北市基隆路二段209巷8號1樓</h5>
-                    <h5>電話：02-2738-0567</h5>
-                    <h3>營業時間：</h3>
-                    <h5>週一公休，<br>
-                        二～五 16:00-20:00，<br>
-                        六 14:00-20:00，日 14:00-18:00</h5>
+        <div class="bg fixed"></div>
+        <section class="area">
+            <div class="wrapper d-flex area1">
+                <figure class="left">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </figure>
+                <div class="category right">
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
                 </div>
             </div>
-            
         </section>
+        <section class="area relative">
+            <div class="wrapper d-flex absolute area2">
+                <figure class="left">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </figure>
+                <div class="category right">
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="area">
+            <div class="wrapper d-flex area3">
+                <figure class="left">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </figure>
+                <div class="category right">
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
     </main>
     <footer class="fixed align_center content_center">
         <div class="container wrapper d-flex item_center space_between ">
